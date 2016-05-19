@@ -16,6 +16,7 @@ class Nav extends Model
 
     public function categories()
     {
+        //test
         return DB::table('procedure_categories')->get();
     }
     
