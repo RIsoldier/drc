@@ -34,12 +34,11 @@
       <div class="col-md-2 ft-links"><!-- link block -->
         <h2>Quick Links</h2>
         <ul>
-          <li><i class="mdi-navigation-arrow-forward"></i><a href="javascript:void(0)">About us</a></li>
-          <li><i class="mdi-navigation-arrow-forward"></i><a href="javascript:void(0)">Treatments</a></li>
-          <li><i class="mdi-navigation-arrow-forward"></i><a href="javascript:void(0)">Before/After</a></li>
-          <li><i class="mdi-navigation-arrow-forward"></i><a href="javascript:void(0)">Doctors</a></li>
-          <li><i class="mdi-navigation-arrow-forward"></i><a href="javascript:void(0)">FAQ's</a></li>
-          <li><i class="mdi-navigation-arrow-forward"></i><a href="javascript:void(0)">Career</a></li>
+          <li><i class="mdi-navigation-arrow-forward"></i><a href="{{ url('about') }}">About us</a></li>
+          <li><i class="mdi-navigation-arrow-forward"></i><a href="{{ url('procedures') }}">Procedures</a></li>
+          <li><i class="mdi-navigation-arrow-forward"></i><a href="{{ url('gallery') }}">Before/After</a></li>
+          <li><i class="mdi-navigation-arrow-forward"></i><a href="{{ url('faq') }}">FAQ's</a></li>
+          <li><i class="mdi-navigation-arrow-forward"></i><a href="{{ url('privacy') }}">Privacy Statement</a></li>
         </ul>
       </div>
       <!-- /.link block -->

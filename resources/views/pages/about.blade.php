@@ -52,62 +52,56 @@
               <div class="card-panel">
                 <h2>Make An Appointment</h2>
                 <p>You can also get in touch by filling out the form below.</p>
-                <form class="form-horizontal" method="post" action="quick-appoinment.php">
-                  
-                    
-                    <!-- Text input-->
+                {!! Form::open(array('route' => 'contact_store', 'method' => 'post', 'files'=> true, 'class' => 'form-horizontal')) !!} 
                     <div class="form-group">
-                      <label class="sr-only col-md-4 control-label" for="name">Name</label>
-                      <div class="col-md-12">
-                        <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required>
+                     {!! Form::label('name', "Name", array('class' => 'sr-only col-md-4 control-label')) !!}
+                      <div class="col-md-12">                       
+                        {!! Form::text('name', null, array('class' => 'form-control input-md', 'required', 'placeholder' => 'Name')) !!}
                       </div>
                     </div>
-                    
-                    <!-- Text input-->
                     <div class="form-group">
-                      <label class="sr-only col-md-4 control-label" for="email">E-Mail</label>
-                      <div class="col-md-12">
-                        <input id="email" name="email" type="text" placeholder="E-Mail" class="form-control input-md" required>
+                     {!! Form::label('email', "E-Mail", array('class' => 'sr-only col-md-4 control-label')) !!}
+                      <div class="col-md-12">                       
+                        {!! Form::text('email', null, array('class' => 'form-control input-md', 'required', 'placeholder' => 'E-Mail')) !!}
                       </div>
                     </div>
-                    
-                    <!-- Text input-->
                     <div class="form-group">
-                      <label class="sr-only col-md-4 control-label" for="number">Phone</label>
-                      <div class="col-md-12">
-                        <input id="number" name="number" type="text" placeholder="Phone" class="form-control input-md" required>
+                     {!! Form::label('number', "Phone", array('class' => 'sr-only col-md-4 control-label')) !!}
+                      <div class="col-md-12">                       
+                        {!! Form::text('number', null, array('class' => 'form-control input-md', 'required', 'placeholder' => 'Phone')) !!}
                       </div>
                     </div>
                     
                     <!-- Select Basic -->
                     <div class="form-group">
                       <label class="sr-only col-md-4 control-label" for="appointment">Appointment</label>
+                      {!! Form::label('appointment', "Appointment", array('class' => 'sr-only col-md-4 control-label')) !!}
                       <div class="col-md-12">
-                        <select id="appointment" name="appointment" class="form-control">  <option value="Breast Treatment">Breast Treatment</option>
-                          <option value="Head & Face">Head &amp; Face</option>
-                          <option value="Skin & Hair">Skin &amp; Hair</option>
-                          <option value="For Men">For Men</option>
-                        </select>
+                      {!!   Form::select('number', array(
+                        'Breast Treatment' => 'Breast Treatment',
+                         'Skin & Hair' => 'Skin & Hair',
+                          'For Men' => 'For Men'
+                          ), null , array('class' => 'form-control', 'required')) !!}
                       </div>
                     </div>
                     
                     <!-- Textarea -->
                     <div class="form-group">
-                      <label class="sr-only col-md-4 control-label" for="messga">Message</label>
+                      {!! Form::label('message', "Message", array('class' => 'sr-only col-md-4 control-label')) !!}
                       <div class="col-md-12">
-                        <textarea class="form-control" id="messga" name="messga" placeholder="Write your message here"></textarea>
+                        {!! Form::textarea('message', null, array('class' => 'form-control', 'required', 'placeholder' => 'Write your message here')) !!}
                       </div>
                     </div>
                     
                     <!-- Button -->
                     <div class="form-group">
-                      <label class="sr-only col-md-4 control-label" for="singlebutton">appointment</label>
+                      {!! Form::label('appointment', 'Appointment', array('class' => 'sr-only col-md-4 control-label')) !!}
                       <div class="col-md-12">
-                        <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-raised tp-btn-regular">Make an appointment</button>
+                        {!! Form::button('Make an appointment', array('class' => 'btn btn-raised tp-btn-regular', 'type' => 'submit')) !!}
                       </div>
                     </div>
                   
-                </form>
+                {!! Form::close() !!}
               </div>
             </div>
           </div>

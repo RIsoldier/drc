@@ -23,7 +23,7 @@
                   <ul>
                     <li class="dropdown-header {{ Ekko::isActiveRoute('home') }}">{{ $k }} </li>
                       @foreach ($v as $key => $value) 
-                          {!! Menu::item($value, url('/procedures/'.$value)) !!}
+                          {!! Menu::item($value, url('/procedures/'.urlencode($value))) !!}
                       @endforeach
                   </ul>
                 </li>  

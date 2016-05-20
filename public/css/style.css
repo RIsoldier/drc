@@ -599,7 +599,7 @@ font-size: 24px;
 	text-align: center;
 }
 .dc-pic img {
-	width: 100%;
+	/*width: 100%;*/
 }
 /* Template Gallery */
 #tp-gallery {
@@ -1137,7 +1137,7 @@ ul.sub-nav {
 	margin-bottom: 30px;
 }
 .tp-doctor .tp-dc-blk .card-box {
-	background: #D32F2F;
+	background: #201C56;
 	padding: 40px 20px;
 	display: inherit;
 	width: 100%;

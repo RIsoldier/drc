@@ -18,17 +18,20 @@ Route::pattern('slug', '[0-9a-z-_]+');
 /***************    Site routes  **********************************/
 Route::get('/', 'HomeController@index');
 Route::get('home', 'HomeController@index');
-Route::get('about', 'PagesController@about');
+Route::get('about', ['as' => 'about', 'uses' => 'PagesController@about']);
+Route::post('about', ['as' => 'contact_store', 'uses' => 'AboutController@store']);
 
 Route::get('procedures', 'ProceduresController@index');
 Route::get('procedures/{category}', 'ProceduresController@categories');
 Route::get('procedures/{category}/{name}', 'ProceduresController@show');
 
-Route::get('contact', 'PagesController@contact');
+//Route::get('contact', 'PagesController@contact');
+//Route::post('contact', ['as' => 'contact_store', 'uses' => 'AboutController@store']);
 Route::get('articles', 'ArticlesController@index');
 Route::get('article/{slug}', 'ArticlesController@show');
 Route::get('video/{id}', 'VideoController@show');
 Route::get('photo/{id}', 'PhotoController@show');
+Route::get('privacy', 'PagesController@privacy');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
