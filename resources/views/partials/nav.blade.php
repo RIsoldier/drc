@@ -1,3 +1,12 @@
+<?php
+  $categories = 
+  [ 'Surgical'  => ['Face Lift','Eyes','Nose','Brows','Ears'], 
+    'Laser'       => ['Pearl', 'Pearl Fractional', 'Titan', 'Resurfacing', 'Hair Removal'],
+    'Body'        => ['Smart Lipo', 'Zerona', 'Massage'],
+    'Injectable'  => ['Sculptra', 'Botox', 'Dysport', 'Juvederm', 'Restylane', 'Radiesse'],    
+    'Aesthetic'   => ['VISIA', 'Obagi', 'Skin Medica', 'Glytone', 'Avene', 'Latisse']
+  ];
+?>
 <div id="tp-navbar" class="tp-navbar">
   <div class="container">
     <nav class="navbar navbar-default">
@@ -7,59 +16,18 @@
       <div class="navbar-collapse collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
           <li class="{{ Ekko::areActiveURLs(['', '/home']) }}"><a href="{{ url('home') }}">Home</a></li>
-          <li class="dropdown mega-dropdown {{ Ekko::isActiveMatch('procedures') }}"> <a href="{{ url('procedures') }}" class="dropdown-toggle" data-toggle="dropdown">Procedures<b class="caret"></b></a>
-            
-            <ul class="dropdown-menu mega-dropdown-menu row">
-              <li class="col-md-3">
-                <ul>
-                  <li class="dropdown-header">Breast Treatments</li>
-                  <li class="active"><a href="procedures-single.html">Breast Augmentation</a></li>
-                  <li><a href="{{ url('home') }}" class="{{ Ekko::isActiveRoute('home') }}">Home</a></li>
-                  <li><a href="#" class="">Location</a></li>
-                </ul>
-              </li>
-              <li class="col-md-3">
-                <ul>
-                  <li class="dropdown-header">Body Treatments</li>
-                  <li><a href="#">Arm Lift</a></li>
-                  <li><a href="#">Body Contouring</a></li>
-                  <li><a href="#">Buttocks Lift</a></li>
-                  <li><a href="#">CoolSculpting</a></li>
-                  <li><a href="#">Liposuction</a></li>
-                  <li><a href="#">Mommy Makeover</a></li>
-                  <li><a href="#">Spider Vein Injections</a></li>
-                  <li><a href="#">Tummy Tuck</a></li>
-                </ul>
-              </li>
-              <li class="col-md-3">
-                <ul>
-                  <li class="dropdown-header">Head &amp; Face</li>
-                  <li><a href="#">Brow Lift</a></li>
-                  <li><a href="#">Ear Surgery </a></li>
-                  <li><a href="#">Eyelid Surgery </a></li>
-                  <li><a href="#">Facelift </a></li>
-                  <li><a href="#">Facial Implants</a></li>
-                  <li><a href="#">Lip Enhancement</a></li>
-                  <li><a href="#">Neck Lift </a></li>
-                  <li><a href="#">Nose Surgery </a></li>
-                </ul>
-              </li>
-              <li class="col-md-3">
-                <ul>
-                  <li class="dropdown-header">For Men</li>
-                  <li><a href="#">Lower Body Lift</a></li>
-                  <li><a href="#">Nonsurgical Fat Reduction</a></li>
-                  <li><a href="#">Pectoral Implants</a></li>
-                  <li><a href="#">Penis Enlargement</a></li>
-                  <li><a href="#">Thigh Lift</a></li>
-                  <li><a href="#">Upper Arm Lift</a></li>
-                  <li><a href="#">Upper Body Lift</a></li>
-                  <li class="dropdown-header">Injectables</li>
-                  <li><a href="#">Botulinum Toxin</a></li>
-                  <li><a href="#">Fat Transafar</a></li>
-                  <li><a href="#">Fillers</a></li>
-                </ul>
-              </li>
+          <li class="dropdown mega-dropdown {{ Ekko::isActiveMatch('procedures') }}"> <a href="{{ url('procedures') }}" class="dropdown-toggle" data-toggle="dropdown">Procedures<b class="caret"></b></a>            
+            <ul class="dropdown-menu mega-dropdown-menu row">                                       
+              @foreach($categories as $k => $v)
+                <li class="col-md-3">     
+                  <ul>
+                    <li class="dropdown-header {{ Ekko::isActiveRoute('home') }}">{{ $k }} </li>
+                      @foreach ($v as $key => $value) 
+                          {!! Menu::item($value, url('/procedures/'.$value)) !!}
+                      @endforeach
+                  </ul>
+                </li>  
+              @endforeach                
             </ul>
           </li>
            <li class="dropdown"> <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Gallery<b class="caret"></b></a>
@@ -70,13 +38,7 @@
               <li><a href="video-testimonial-boxed.html">Video Boxed Gallery</a></li>
             </ul>
           </li>
-          <li class="dropdown"> <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Doctors<b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="doctor.html">Doctor</a></li>
-              <li><a href="doctor-single.html">Doctor Single</a></li>
-              <li><a href="doctor-masonry.html">Doctor Masonry</a></li>
-            </ul>
-          </li>
+          <li class="{{ Ekko::areActiveURLs(['', '/about']) }}"><a href="{{ url('about') }}">About</a></li>
           <li class="dropdown"> <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">News <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="blog.html">Blog</a></li>

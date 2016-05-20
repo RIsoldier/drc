@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 tp-top-add">
-        <p>Monday - Thursday : 7.30am - 5:00pm  |  Friday : 7.30am - 5:00pm</p>
+        <p></p>
       </div>
       <div class="col-md-6">
         <ul class="tp-top-links">

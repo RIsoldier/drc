@@ -20,22 +20,23 @@
               <div class="card-content dc-desc"><!-- doctor content box -->
                 <p>Dr. Andrew Coundouriotis specializes in the art and science of cosmetic and reconstructive surgery of the face, head and neck. He is one of only a few surgeons in the Southeastern United States who is both board certified and fellowship trained in facial cosmetic surgery.</p>
                 <h2>Certifications &amp; Affiliations</h2>
+                <p>Dr. Coundouriotis is a Fellow of both the American Academy of Facial Plastic Surgeons and the American College of Surgeons. He is certified by the American Board of Facial Plastic and Reconstructive Surgery and the American Board of Otolaryngology, Head &amp; Neck Surgery. He is proud to be among a select group of surgeons in the country to be certified by both boards. He was recently Certified in Anti-Aging and Regenerative Medicine by the American Academy of Anti-Aging Medicine (A4M). He is a member of the American Society of Laser Medicine and Surgery and the Florida Society of Facial Plastic and Reconstructive Surgery.</p>
                 <ul class="arrow-list">
-                  <li>Board Certified by the Lorem ipsum university.</li>
-                  <li>Fellow of the There are many variations.</li>
-                  <li>Consulting Staff at Cosmetic Medical Center.</li>
-                  <li>Participating Physician Various versions have evolved over the years.</li>
-                  <li>Aldus PageMaker including versions of Lorem Ipsum.</li>
+                  <li>The American Academy of Facial Plastic and Reconstructive Surgery</li>
+                  <li>American Academy of Anti-Aging Medicine</li>
+                  <li>American Board of Otolaryngology</li>
+                  <li>American Society for Laser Medicine and Surgery</li>
                 </ul>
                 <h2>Education &amp; Training:</h2>
+                <p>Dr. Coundouriotis graduated Suma Cum Laude from Duke University and was invited into Phi Beta Kappa. He then enrolled in the Duke University School of Medicine for his Medical Degree.</p>
                 <ul class="arrow-list">
                   <li>University of Lorem City – Bachelor of Arts, Biology</li>
                   <li>University of Simple dummy at San Antonio, Texas</li>
                   <li>Lorem ipsum is simple dummy Education and Training</li>
                 </ul>
-                <p>Cras pellentesque odio in commodo bibendum. Etiam id mauris metus. Vivamus rhoncus ultrices libero eget elementum. Nunc lobortis ligula elit, ut tempor lorem aliquet eget. Sed convallis faucibus purus, at cursus nulla congue vitae. Aliquam erat volutpat. Pellentesque nec semper sapien.</p>
-                <p>Etiam finibus dapibus urna, malesuada posuere odio consectetur sed. Integer scelerisque dolor non ultrices tempus. Cras aliquam leo nec ligula molestie, eget bibendum nisi aliquam.</p>
-                <p>Vestibulum ut dolor ut eros efficitur convallis non pharetra velit. Aenean ligula ex, lobortis vel iaculis in, fringilla in quam. </p>
+                
+                <p>His interest in the marvelous and intricate complexities of the head &amp; neck area led Dr. Coundouriotis to pursue a career in the head and neck surgery specialty. With this goal in mind, Dr. Coundouriotis completed a general surgery internship and residency with distinction in the field of head and neck surgery at Duke University Medical Center. He followed this with a Fellowship with Dr. Ferdinand Becker in the relatively new subspecialty area of head and neck surgery, Facial Plastic and Reconstructive Surgery.</p>
+                <p>When Dr. Coundouriotis completed his training in 1993, he became one of a select group of surgical specialists in the country equipped with this special surgical background.</p>                
               </div>
               <!-- doctor content box --> 
             </div>

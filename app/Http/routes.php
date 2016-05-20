@@ -11,6 +11,7 @@ Route::model('language', 'App\Language');
 Route::model('photoalbum', 'App\PhotoAlbum');
 Route::model('photo', 'App\Photo');
 Route::model('user', 'App\User');
+Route::model('nav', 'App\Nav');
 Route::pattern('id', '[0-9]+');
 Route::pattern('slug', '[0-9a-z-_]+');
 

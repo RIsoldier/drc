@@ -152,6 +152,8 @@ return [
 
         Laravelista\Ekko\EkkoServiceProvider::class,
 
+        Illuminate\Html\MenuServiceProvider::class,
+
     ],
 
     /*
@@ -207,6 +209,8 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
 
         'Ekko' => Laravelista\Ekko\Facades\Ekko::class,
+
+        'Menu' => Illuminate\Support\Facades\Menu::class,
 
     ],
 
