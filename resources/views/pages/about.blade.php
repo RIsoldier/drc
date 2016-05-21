@@ -12,13 +12,12 @@
             <div class="card">
               <div class="card-box"><!-- doctor box-->
                 <div class="col-sm-8 col-md-8 dc-name">
-                  <h1>Dr. Coundouriotis</h1>
-                  <span class="dc-designation">MD</span> </div>
+                  <h1>Andrew Coundouriotis, M.D., F.A.C.S.</h1>
+                  <span class="dc-designation">Dr. Andrew Coundouriotis specializes in the art and science of cosmetic and reconstructive surgery of the face, head and neck.</span> </div>
                 <div class="col-sm-4 col-md-4 dc-pic"> <img src="images/dr-c-cutout-suit.png" alt="" class="img-circle img-responsive" /> </div>
               </div>
               <!-- doctor box-->
-              <div class="card-content dc-desc"><!-- doctor content box -->
-                <p>Dr. Andrew Coundouriotis specializes in the art and science of cosmetic and reconstructive surgery of the face, head and neck. He is one of only a few surgeons in the Southeastern United States who is both board certified and fellowship trained in facial cosmetic surgery.</p>
+              <div class="card-content dc-desc">
                 <h2>Certifications &amp; Affiliations</h2>
                 <p>Dr. Coundouriotis is a Fellow of both the American Academy of Facial Plastic Surgeons and the American College of Surgeons. He is certified by the American Board of Facial Plastic and Reconstructive Surgery and the American Board of Otolaryngology, Head &amp; Neck Surgery. He is proud to be among a select group of surgeons in the country to be certified by both boards. He was recently Certified in Anti-Aging and Regenerative Medicine by the American Academy of Anti-Aging Medicine (A4M). He is a member of the American Society of Laser Medicine and Surgery and the Florida Society of Facial Plastic and Reconstructive Surgery.</p>
                 <ul class="arrow-list">

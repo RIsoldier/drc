@@ -32,4 +32,21 @@ class PagesController extends Controller {
 		return view('pages.privacy');
 	}
 
+	public function gallery()
+	{
+		return view('pages.gallery');
+	}
+
+	public function videos()
+	{
+		return view('pages.videos');
+	}
+
+	public function facility()
+	{
+		return view('pages.facility');
+	}
+
+
+
 }

@@ -1,35 +1,6 @@
 <div id="tp-footer" class="tp-footer"><!-- tp footer -->
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 ft-abt-blk"><!-- about block-->
-        <div class="ft-logo"> <img src="{{asset('images/skin-surgery.png')}}" alt=""> </div>
-        <div class="ft-abt"></div>
-        <p>Meditemp is sinsce 2000 provide service Lorem ipsum dolor sit amet, consectetur dolor adipiscing elit. Maecenas diam neque, Lorem ipsum dolor sit amet lorem consectetur adipisicing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem  ccusantium doloremqueb illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-      </div>
-      <!-- /.about block-->
-      <div class="col-md-3  ft-add"><!-- address -->
-        <h2>Austin Location</h2>
-        <ul>
-          <li>8901 Marmora Road, B/h Lakshmi 
-            Template Glasgow, D04 89GR
-            Austrialia</li>
-          <li>1-800-123-4567 / 123 - 4567</li>
-          <li><a href="mailto:info@meditemp.com">info@meditempaustin.com</a></li>
-        </ul>
-      </div>
-      <!-- /.address -->
-      <div class="col-md-3 ft-add"><!-- address -->
-        <h2>London Location</h2>
-        <ul>
-          <li>1350 Caston Iconic Complex
-            Nr.Lasgao Newzine
-            London</li>
-          <li>1-700-250-4322</li>
-          <li><a href="mailto:info@meditemp.com">info@meditemplondon.com</a></li>
-        </ul>
-      </div>
-      <!-- /.address --> 
-    </div>
+    
     <div class="row ft-row-two">
       <div class="col-md-2 ft-links"><!-- link block -->
         <h2>Quick Links</h2>

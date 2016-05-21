@@ -2,9 +2,8 @@
 @section('title') Home :: @parent @endsection
 @section('content')
     @include('partials.slider')
-    @include('partials.welcome')
-    @include('partials.meet')
-    @include('partials.gallery')
-    @include('partials.story')
+    @include('partials.welcomemessage')  
+    @include('partials.service')  
+    @include('partials.justformen')  
 @endsection
 

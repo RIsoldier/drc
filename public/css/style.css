@@ -349,7 +349,7 @@ label.control-label {
 #tp-header {
 }
 .tp-header {
-	background-color:#FEFDEF;
+	background-color:#F4F0EE;
 	padding-top:15px;
 	padding-bottom:15px;
 	-webkit-font-smoothing: antialiased;
@@ -1178,7 +1178,7 @@ ul.sub-nav {
 }
 .tp-doctor .tp-doctor-single .card-box {
 	background: #201C56;
-	padding: 40px 20px;
+	padding: 10px 20px;
 	display: inherit;
 	width: 100%;
 	border-top-left-radius: 2px;
@@ -1187,11 +1187,13 @@ ul.sub-nav {
 .tp-doctor .tp-doctor-single .dc-name h1 {
 	padding-top: 60px;
 	color: #fff;
+	font-size: 30px;
+
 }
 .dc-designation {
-	font-weight: 600;
-	font-size: 16px;
+	font-size: 15px;
 	color: #fff;
+	text-align: center;
 }
 /*
  *

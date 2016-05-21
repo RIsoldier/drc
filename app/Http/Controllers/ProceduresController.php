@@ -23,22 +23,23 @@ class ProceduresController extends Controller {
     public function categories($category)
     {
      
-        $procedures = DB::table('procedures')->where('category', '=', $category)->get();
+        $procedures = DB::table('procedures')->where('name', '=', urldecode($category))->get();
 
         return view('procedure.view', compact('procedures'));
     }
 
-    public function getCategories()
+    public function getCategories($category)
     {
-        return DB::table('procedure_categories')->get();        
+        $category =  DB::table('procedures')->where('category', '=', $category)->get(); 
+        return view('procedure.view', compact('category'));       
     }
 
-    public function getProcedures($categories)
+    /*public function getProcedures($categories)
     {
         $categoryArray = [];
         foreach ($categories as $category) {
-            $categoryArray[] = DB::table('procedures')->where('category', '>', $category)->get();
+            $categoryArray[] = DB::table('procedures')->where('category', '=', $category)->get();
         }
-        return $categoryArray;
-    }
+        return view('procedure.view', compact('categoryArray'));
+    }*/
 }

@@ -19,11 +19,13 @@ Route::pattern('slug', '[0-9a-z-_]+');
 Route::get('/', 'HomeController@index');
 Route::get('home', 'HomeController@index');
 Route::get('about', ['as' => 'about', 'uses' => 'PagesController@about']);
+Route::get('facility', ['as' => 'facility', 'uses' => 'PagesController@facility']);
+Route::get('contact', ['as' => 'contact', 'uses' => 'PagesController@contact']);
 Route::post('about', ['as' => 'contact_store', 'uses' => 'AboutController@store']);
 
 Route::get('procedures', 'ProceduresController@index');
 Route::get('procedures/{category}', 'ProceduresController@categories');
-Route::get('procedures/{category}/{name}', 'ProceduresController@show');
+Route::get('procedures/{category}/{name}', 'ProceduresController@getProcedures');
 
 //Route::get('contact', 'PagesController@contact');
 //Route::post('contact', ['as' => 'contact_store', 'uses' => 'AboutController@store']);
@@ -32,6 +34,8 @@ Route::get('article/{slug}', 'ArticlesController@show');
 Route::get('video/{id}', 'VideoController@show');
 Route::get('photo/{id}', 'PhotoController@show');
 Route::get('privacy', 'PagesController@privacy');
+Route::get('gallery', 'PagesController@gallery');
+Route::get('videos', 'PagesController@videos');
 
 Route::controllers([
     'auth' => 'Auth\AuthController',
