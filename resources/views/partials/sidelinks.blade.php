@@ -8,9 +8,9 @@
           <ul class="sub-nav arrow-list">
             <li class="active"><a href="#">Full Face</a>
             <li><a href="#">Lower Face</a></li>
-            <li><a href="#">Breast Reconstruction</a></li>
-            <li><a href="#">Breast Revision</a></li>
-            <li><a href="#">Breast Reduction</a></li>
+            <li><a href="#">Max Lift</a></li>
+            <li><a href="#">Mini Lift</a></li>
+            <li><a href="#">Precision</a></li>
           </ul>
         </div>
       </div>

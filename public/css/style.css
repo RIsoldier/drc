@@ -671,9 +671,10 @@ font-size: 24px;
 #tp-footer {
 }
 .tp-footer {
-	background-color: #261f1e;
+	background-color: #201C56;
 	padding-top: 60px;
 	padding-bottom: 60px;
+	color: white;
 }
 .tp-footer .ft-row-two {
 	margin-top: 30px;
@@ -697,7 +698,7 @@ font-size: 24px;
 	padding-right: 10px;
 }
 .tp-footer .ft-links ul li a {
-	color: #847774;
+	color: white;
 }
 .tp-footer .ft-appoint {
 	margin-bottom: 30px;
@@ -717,7 +718,7 @@ font-size: 24px;
 }
 .tp-footer .ft-newsletter .form-control {
 	border: 0;
-	background-image: linear-gradient(#7E1A38, #7E1A38), linear-gradient(#555151, #555151)!important;
+	background-image: linear-gradient(#7E1A38, #7E1A38), linear-gradient(white, white)!important;
 	background-size: 0 2px, 100% 1px;
 	background-repeat: no-repeat;
 	background-position: center bottom, center calc(100% - 1px);

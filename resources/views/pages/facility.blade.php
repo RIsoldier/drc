@@ -9,7 +9,7 @@
       <div class="card-panel">
       <div class="row tp-abt-page" id="tp-abt-page"><!-- about page -->
         <div class="col-md-12 tp-title">
-          <h1>Welcome To Our Practice</h1>
+          <h1>Welcome To Our Facility</h1>
         </div>
         <div class="col-md-12 abt-pg-pic"><img src="images/newbldg.png" alt="" class="img-responsive"></div>        
         <div class="col-md-12">

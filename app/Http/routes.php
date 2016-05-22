@@ -19,6 +19,10 @@ Route::pattern('slug', '[0-9a-z-_]+');
 Route::get('/', 'HomeController@index');
 Route::get('home', 'HomeController@index');
 Route::get('about', ['as' => 'about', 'uses' => 'PagesController@about']);
+
+Route::get('products', ['as' => 'product', 'uses' => 'ProductsController@categories']);
+Route::get('products/{category}', ['as' => 'products', 'uses' => 'ProductsController@categories']);
+
 Route::get('facility', ['as' => 'facility', 'uses' => 'PagesController@facility']);
 Route::get('contact', ['as' => 'contact', 'uses' => 'PagesController@contact']);
 Route::post('about', ['as' => 'contact_store', 'uses' => 'AboutController@store']);

@@ -93,10 +93,10 @@
               </form>
             </div>
           </div>
-          <!-- /.tp appointment --> 
         </div>
       </div>
       @include('partials.sidelinks')
-  
+    </div>
+  </div>
 </div>
 @endsection

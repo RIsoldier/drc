@@ -43,7 +43,7 @@
     <link rel="shortcut icon" href="{!! asset('images/favicon.png')  !!} ">
 </head>
 <body>
-
+@include('partials.topbar')
 @include('partials.header')
 @include('partials.nav')
 

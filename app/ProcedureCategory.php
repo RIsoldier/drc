@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\URL;
 
-class ProcedureCategory extends Model
+class ProductCategory extends Model
 {
 
 	public function category()

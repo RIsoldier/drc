@@ -49,7 +49,7 @@
           <div class="col-md-12">
             <div class="app-form-widget">
               <div class="card-panel">
-                <h2>Make An Appointment</h2>
+                <h2>Schedule a Consultation</h2>
                 <p>You can also get in touch by filling out the form below.</p>
                 {!! Form::open(array('route' => 'contact_store', 'method' => 'post', 'files'=> true, 'class' => 'form-horizontal')) !!} 
                     <div class="form-group">
@@ -77,8 +77,8 @@
                       {!! Form::label('appointment', "Appointment", array('class' => 'sr-only col-md-4 control-label')) !!}
                       <div class="col-md-12">
                       {!!   Form::select('number', array(
-                        'Breast Treatment' => 'Breast Treatment',
-                         'Skin & Hair' => 'Skin & Hair',
+                        'Surgical' => 'Surgical',
+                         'Non Surgical' => 'Non Surgical',
                           'For Men' => 'For Men'
                           ), null , array('class' => 'form-control', 'required')) !!}
                       </div>
@@ -96,20 +96,11 @@
                     <div class="form-group">
                       {!! Form::label('appointment', 'Appointment', array('class' => 'sr-only col-md-4 control-label')) !!}
                       <div class="col-md-12">
-                        {!! Form::button('Make an appointment', array('class' => 'btn btn-raised tp-btn-regular', 'type' => 'submit')) !!}
+                        {!! Form::button('Schedule a Consultation', array('class' => 'btn btn-raised tp-btn-regular', 'type' => 'submit')) !!}
                       </div>
                     </div>
                   
                 {!! Form::close() !!}
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="bf-gallery"><!-- before after gallery -->
-              <div class="card-panel">
-                <h2>Before / After Gallery</h2>
-                <p>Our expert team has treated over half a million people.</p>
-                <img src="images/glry-pic.jpg" alt="before after gallery" class="img-responsive"> <a href="gallery-list.html" class="btn btn-raised tp-btn-regular"> View Gallery</a> </div>
               </div>
             </div>
           </div>

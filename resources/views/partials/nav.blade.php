@@ -5,6 +5,11 @@
     'Injectables'  => ['Botox', 'Dysport', 'Sculptra', 'Juvederm', 'Restylane', 'Radiesse', 'Kybella'],    
     'Aesthetic'   => ['SkinMedica', 'VISIA', 'Obagi', 'Avene', 'Butterfly Lashes', 'Latisse']
   ];
+  $products = 
+  [ 'Skin'  => ['SkinMedica','Obagi'], 
+    'Face'  => ['Obagi','Avene'], 
+    'Hands' => ['Latisse','VISIA','Sculptra']
+  ];
 ?>
 <div id="tp-navbar" class="tp-navbar">
   <div class="container">
@@ -31,7 +36,20 @@
             </ul>
           </li>
           <li class="{{ Ekko::isActiveRoute('facility') }}"><a href="{{ url('facility') }}">Our Facility</a></li>
-          
+          <li class="dropdown mega-dropdown {{ Ekko::isActiveMatch('products') }}"> <a href="{{ url('products') }}" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>            
+            <ul class="dropdown-menu mega-dropdown-menu row">                                       
+              @foreach($products as $k => $v)
+                <li class="col-md-3">     
+                  <ul>
+                    <li class="dropdown-header {{ Ekko::isActiveRoute('products') }}">{{ $k }} </li>
+                      @foreach ($v as $key => $value) 
+                          {!! Menu::item($value, url('/products/'.urlencode($value))) !!}
+                      @endforeach
+                  </ul>
+                </li>  
+              @endforeach                
+            </ul>
+          </li>
           <li class="{{ Ekko::isActiveRoute('contact') }}"><a href="{{ url('contact') }}">Contact Us</a></li>
           
           
