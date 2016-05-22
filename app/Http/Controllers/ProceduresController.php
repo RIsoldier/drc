@@ -14,18 +14,19 @@ class ProceduresController extends Controller {
 
     public function index()
     {
-        $categories = $this->getCategories();
         $procedures = DB::table('procedures')->groupBy('category')->get();
 
-        return view('procedure.index', compact('categories', 'procedures'));
+        return view('procedure.index', compact('procedures'));
     }
 
     public function categories($category)
     {
      
         $procedures = DB::table('procedures')->where('name', '=', urldecode($category))->get();
+        $links      = $this->getCategory($procedures);
 
-        return view('procedure.view', compact('procedures'));
+
+        return view('procedure.view', compact('procedures', 'links'));
     }
 
     public function getCategories($category)
@@ -34,12 +35,8 @@ class ProceduresController extends Controller {
         return view('procedure.view', compact('category'));       
     }
 
-    /*public function getProcedures($categories)
+    public function getCategory($value)
     {
-        $categoryArray = [];
-        foreach ($categories as $category) {
-            $categoryArray[] = DB::table('procedures')->where('category', '=', $category)->get();
-        }
-        return view('procedure.view', compact('categoryArray'));
-    }*/
+        return DB::table('procedures')->where('category', '=', $value[0]->category)->get();
+    }
 }

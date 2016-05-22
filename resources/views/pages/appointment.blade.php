@@ -1,8 +1,3 @@
-@extends('layouts.app')
-@section('title') Contact :: @parent @endsection
-
-@section('content')
-@include('partials.breadcrumb')
 <div id="tp-main-container" class="tp-main-container"><!-- tp main container -->
   <div class="container">
     <div class="row">
@@ -96,7 +91,20 @@
           <!-- /.tp appointment --> 
         </div>
       </div>
-      @include('partials.sidelinks')
+      <!-- /.tp left side -->
+      <div class="col-md-4 tp-right-side">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="bf-gallery"><!-- before after gallery -->
+              <div class="card-panel">
+                <h2>Before / After Gallery</h2>
+                <p>Our expert team has treated over half a million people.</p>
+                <img src="images/glry-pic.jpg" alt="before after gallery" class="img-responsive"> <a href="gallery-list.html" class="btn btn-raised tp-btn-regular"> View Gallery</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   
 </div>
-@endsection

@@ -3,7 +3,6 @@
 @section('title')
   @parent
 @endsection
-
 @section('content')
 @include('partials.breadcrumb')   
   <div id="tp-main-container" class="tp-main-container"><!-- tp main container -->
@@ -15,34 +14,41 @@
               <div class="card-panel">                
                 <div class="tp-pro-list">
                 @foreach ($procedures as $procedure)
-                  <h1><a href="#">{{ $procedure->name }}</a></h1>
+                  <h1>{{ $procedureName = $procedure->name }}</h1>
                   <img src="{{asset('images/'.$procedure->image.'')}}" alt="" class="img-responsive">
-                  {!!html_entity_decode($procedure->description)!!}
+                  {!!html_entity_decode($procedure->description)!!}  
+                  <?php $procedureCategory = $procedure->category; ?>
                 @endforeach
                 </div>
               </div>
-            </div><!-- /.tp pro details -->
+            </div>
           </div>
         </div>
-        <!-- /.tp left side -->
-        <div class="col-md-4 tp-right-side"><!-- tp right side -->
+        <div class="col-md-4 tp-right-side">
           <div class="row">
             <div class="col-md-12">
               <div class="sub-nav-widget">
                 <div class="card-panel">
-                  <h2>Breast Treatment</h2>
+                @if ($procedureName == 'Face Lifts')
+                  <h2>Face Lifts</h2>
                   <ul class="sub-nav arrow-list">
-                    <li class="active"><a href="#">Breast Augmentation</a>
-                    <li><a href="#">Breast Lift</a></li>
-                    <li><a href="#">Breast Reconstruction</a></li>
-                    <li><a href="#">Breast Revision</a></li>
-                    <li><a href="#">Breast Reduction</a></li>
+                   @foreach ($links as $procedure)
+                      <li><a href="#">{{ $procedure->name }}</a></li>
+                    @endforeach
                   </ul>
-                </div><!-- side nav -->
-              </div><!-- /.side nav -->
+                @else
+                  <h2><?php echo $procedureCategory; ?></h2>
+                  <ul class="sub-nav arrow-list">
+                   @foreach ($links as $procedure)                      
+                      <li class="{{ Ekko::isActiveMatch(urlencode($procedure->name)) }}"><a href="{{ url('procedures/'.urlencode($procedure->name)) }}">{{ $procedure->name }}</a></li>
+                    @endforeach
+                  </ul>
+                @endif 
+                </div>
+              </div>
             </div>
           </div>
-        </div><!-- /.tp right side -->
+        </div>
       </div>
   </div>
   

@@ -24,7 +24,7 @@
         </div>
       </div><!-- /.about page -->
     </div>
-    
+    <div id="map"></div>
     <div class="card-panel">
       <div class="row tp-abt-why"><!-- why us -->
         <div class="col-md-12">
@@ -86,6 +86,7 @@
             </div>
           </div>
         </div>
+        
       </div><!-- /.why us -->
     </div>
     </div><!-- Template full page -->

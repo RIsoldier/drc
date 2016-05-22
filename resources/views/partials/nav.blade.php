@@ -1,8 +1,8 @@
 <?php
   $categories = 
-  [ 'Surgical'  => ['Face Lifts','Neck Lifts','Precision','Eyes','Nose', 'Brows', 'Ears'], 
+  [ 'Surgical'  => ['Face Lifts','Neck Lift','Precision','Eyes','Nose', 'Brow', 'Ears'], 
     'Laser'       => ['Pearl', 'Pearl Fractional', 'Infini', 'SmartLipo', 'Cellulaze', 'Laser Resurfacing', 'IPL', 'Titan'],
-    'Injectable'  => ['Botox', 'Dysport', 'Sculptra', 'Juvederm', 'Restylane', 'Radiesse', 'Kybella'],    
+    'Injectables'  => ['Botox', 'Dysport', 'Sculptra', 'Juvederm', 'Restylane', 'Radiesse', 'Kybella'],    
     'Aesthetic'   => ['SkinMedica', 'VISIA', 'Obagi', 'Avene', 'Butterfly Lashes', 'Latisse']
   ];
 ?>

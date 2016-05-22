@@ -4,8 +4,13 @@
       <div class="col-md-12">
         <div class="card-panel">
           <ol class="breadcrumb">
-            <li><a href="index.html"><?php echo 'Home';?></a></li>
-            <li class="active">Procedures</li>
+            <li>Home</li>
+            <li class="">{{ ucfirst(\Request::route()->getName()) }}</li>
+            @if (\Request::route()->getName() === 'procedures')
+              @foreach ($procedures as $procedure)
+                <li class="active">{{ $procedure->name }}</li>
+              @endforeach
+            @endif
           </ol>
         </div>
       </div>

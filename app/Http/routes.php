@@ -23,8 +23,9 @@ Route::get('facility', ['as' => 'facility', 'uses' => 'PagesController@facility'
 Route::get('contact', ['as' => 'contact', 'uses' => 'PagesController@contact']);
 Route::post('about', ['as' => 'contact_store', 'uses' => 'AboutController@store']);
 
-Route::get('procedures', 'ProceduresController@index');
+Route::get('procedure', ['as' => 'procedure', 'uses' => 'ProceduresController@index']);
 Route::get('procedures/{category}', 'ProceduresController@categories');
+Route::get('procedures/{category}', ['as' => 'procedures', 'uses' => 'ProceduresController@categories']);
 Route::get('procedures/{category}/{name}', 'ProceduresController@getProcedures');
 
 //Route::get('contact', 'PagesController@contact');
