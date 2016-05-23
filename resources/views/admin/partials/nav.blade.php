@@ -44,6 +44,19 @@
                 </li>
                 <li>
                     <a href="#">
+                        <i class="glyphicon glyphicon-bullhorn"></i> Products
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav collapse">
+                        <li>
+                            <a href="{{url('admin/products')}}">
+                                <i class="glyphicon glyphicon-bullhorn"></i> Products
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
                         <i class="glyphicon glyphicon-camera"></i> Photo items
                         <span class="fa arrow"></span>
                     </a>

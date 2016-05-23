@@ -1,15 +1,7 @@
 <?php
-  $categories = 
-  [ 'Surgical'  => ['Face Lifts','Neck Lift','Precision','Eyes','Nose', 'Brow', 'Ears'], 
-    'Laser'       => ['Pearl', 'Pearl Fractional', 'Infini', 'SmartLipo', 'Cellulaze', 'Laser Resurfacing', 'IPL', 'Titan'],
-    'Injectables'  => ['Botox', 'Dysport', 'Sculptra', 'Juvederm', 'Restylane', 'Radiesse', 'Kybella'],    
-    'Aesthetic'   => ['SkinMedica', 'VISIA', 'Obagi', 'Avene', 'Butterfly Lashes', 'Latisse']
-  ];
-  $products = 
-  [ 'Skin'  => ['SkinMedica','Obagi'], 
-    'Face'  => ['Obagi','Avene'], 
-    'Hands' => ['Latisse','VISIA','Sculptra']
-  ];
+  $categories = App\Nav::getCategories();
+  $products = App\Nav::getProducts();
+  
 ?>
 <div id="tp-navbar" class="tp-navbar">
   <div class="container">
@@ -28,7 +20,7 @@
                   <ul>
                     <li class="dropdown-header {{ Ekko::isActiveRoute('home') }}">{{ $k }} </li>
                       @foreach ($v as $key => $value) 
-                          {!! Menu::item($value, url('/procedures/'.urlencode($value))) !!}
+                          {!! Menu::item($value->name, url('/procedures/'.urlencode($value->name))) !!}
                       @endforeach
                   </ul>
                 </li>  
@@ -43,7 +35,7 @@
                   <ul>
                     <li class="dropdown-header {{ Ekko::isActiveRoute('products') }}">{{ $k }} </li>
                       @foreach ($v as $key => $value) 
-                          {!! Menu::item($value, url('/products/'.urlencode($value))) !!}
+                         {!! Menu::item($value->name, url('/products/'.urlencode($value->name))) !!}
                       @endforeach
                   </ul>
                 </li>  

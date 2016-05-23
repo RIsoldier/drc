@@ -27,7 +27,7 @@ Route::get('facility', ['as' => 'facility', 'uses' => 'PagesController@facility'
 Route::get('contact', ['as' => 'contact', 'uses' => 'PagesController@contact']);
 Route::post('about', ['as' => 'contact_store', 'uses' => 'AboutController@store']);
 
-Route::get('procedure', ['as' => 'procedure', 'uses' => 'ProceduresController@index']);
+Route::get('procedure', ['as' => 'procedure', 'uses' => 'HomeController@index']);
 Route::get('procedures/{category}', 'ProceduresController@categories');
 Route::get('procedures/{category}', ['as' => 'procedures', 'uses' => 'ProceduresController@categories']);
 Route::get('procedures/{category}/{name}', 'ProceduresController@getProcedures');
@@ -75,6 +75,14 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
     Route::get('article/{article}/delete', 'Admin\ArticleController@delete');
     Route::get('article/reorder', 'Admin\ArticleController@getReorder');
     Route::resource('article', 'Admin\ArticleController');
+
+    # Products
+    Route::get('products/data', 'Admin\ProductController@data');
+    Route::get('products/{article}/show', 'Admin\ProductController@show');
+    Route::get('products/{article}/edit', 'Admin\ProductController@edit');
+    Route::get('products/{article}/delete', 'Admin\ProductController@delete');
+    Route::get('products/reorder', 'Admin\ProductController@getReorder');
+    Route::resource('products', 'Admin\ProductController');
 
     # Photo Album
     Route::get('photoalbum/data', 'Admin\PhotoAlbumController@data');
